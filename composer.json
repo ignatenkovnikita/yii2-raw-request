@@ -1,0 +1,21 @@
+{
+    "name": "ignatenkovnikita/yii2-raw-request",
+    "description": "Сatch raw requests for analysis",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","raw request","request"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ignatenkov Nikita",
+            "email": "ignatenkov.n@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ignatenkovnikita\\request\\": ""
+        }
+    }
+}
