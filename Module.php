@@ -11,6 +11,8 @@ namespace ignatenkovnikita\request;
 
 use ignatenkovnikita\request\models\RawRequest;
 use yii\base\BootstrapInterface;
+use yii\base\Controller;
+use yii\base\Event;
 
 class Module extends \yii\base\Module implements BootstrapInterface
 {
@@ -21,7 +23,9 @@ class Module extends \yii\base\Module implements BootstrapInterface
     {
 //        var_dump(123);
 //        die();
-        RawRequest::create(file_get_contents('php://input'));
+//        Event::on(Controller::className(), Controller::EVENT_BEFORE_ACTION, function ($event) {
+//            RawRequest::create(file_get_contents('php://input'));
+//        });
 
         // TODO: Implement bootstrap() method.
     }

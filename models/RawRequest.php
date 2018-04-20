@@ -3,6 +3,7 @@
 namespace ignatenkovnikita\request\models;
 
 use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "raw_request".
@@ -15,7 +16,7 @@ use Yii;
  * @property integer $created_at Created At
  * @property integer $updated_at Updated At
  */
-class RawRequest extends \common\models\ActiveRecord
+class RawRequest extends ActiveRecord
 {
 
 
